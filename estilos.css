@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid__template {
+    display:grid;
+    grid-template-areas:
+    "header header"
+    "productos productos"
+    "servicios publicidad"
+    "footer footer";
+    grid-template-rows: 45px 750px 400px 45px;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(93, 68, 116);
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#productos{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: productos;
+}
+section#servicios{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: servicios;
+}
+aside{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: publicidad;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    background-color: rgb(174, 93, 250);
+    margin: 0;
+    text-align: center;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    font-size: larger;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover {
+    background-color: fuchsia ;
+}
+.imagen-principal{
+    background-position: center;
+    background-size: cover;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("https://www.k-popmag.com/content/images/2021/07/14FF142F-39DD-41A0-8334-029A185DFFB3.jpeg");
+}
+.cuadro__violeta{
+    height: 95%;
+    border: solid 10px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+footer {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(174, 93, 250);
+}
+header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue; 
+    background-color: blueviolet;
+    text-align:center;
+    padding: 5px;
+}
+.tabla{
+    margin: 150px auto;
+    width: 600px;
+}
+table{
+    background-color: aliceblue;
+    text-align: left;
+    width: 100%;
+}
+th, td {
+    border: solid 2px black;
+    padding: 20px;
+}
+thead {
+    background-color:blueviolet;
+    color: aliceblue;
+}
+#plantilla {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "header header"
+    "foto1 texto1"
+    "foto2 texto2"
+    "foto3 texto3"
+    "foto4 texto4"
+    "foto5 texto5"
+    "foto6 texto6"
+    "foto7 texto7"
+    "footer footer";
+    grid-template-rows: 10% 6% repeat(7, 40%) 10%;
+    grid-template-columns: 20% 80%;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+.foto1{
+    grid-area: foto1;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto2{
+    grid-area: foto2;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto3{
+    grid-area: foto3;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto4{
+    grid-area: foto4;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto5{
+    grid-area: foto5;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto6{
+    grid-area: foto6;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto7{
+    grid-area: foto7;
+    margin-left: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.texto1{
+    grid-area: texto1;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto2{
+    grid-area: texto2;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto3{
+    grid-area: texto3;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto4{
+    grid-area: texto4;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto5{
+    grid-area: texto5;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto6{
+    grid-area: texto6;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto7{
+    grid-area: texto7;
+    height: 92%;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+
+/* vista mobile */
+/* MARTIN: Fijate que pasando a max width el punto de corte es mas facil, porque en tu caso vos comenzaste la web diseñandola para desktop, y el min width se usa cuando se comienza mobile first (o sea diseñando primero para celular y luego para desktop). De esta manera tus media estan enfocados a la pantalla que se va achicando.*/
+@media screen and (max-width:768px) {
+    .grid__template {
+        display:grid;
+        grid-template-areas: /* MARTIN: En este caso te recomendaria que cuando se pase a mobile, mandes todo a una unica columna, ya que la foto, el video, y el texto de tu página se acomodarian mejor de esta manera, una caja debajo de la otra.  Entonces cuando la pantalla se comience a achicar, SERVICIOS y PUBLICIDAD (que antes estaban uno alado del otro) pasan a estar uno arriba del otro.*/
+        "header"
+        "productos"
+        "servicios"
+        "publicidad"
+        "footer";
+        grid-template-rows: repeat(5, 1fr); /* MARTIN: Lo pase a fracciones para que sea mas facil de maniobrar, pero si queres podrias usar los pixeles aunque por ahi no es tan responsive llegado el caso.*/
+        grid-template-columns: 1fr; /* Ahora pasa a ser una sola columna que ocupa todo el ancho de la pantalla */
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 100vh;
+        margin: 0
+}
+.imagen-principal{ /* MARTIN: Hay que darle una altura minima a la foto cuando se va achicando la pantalla porque sino no se va a adaptar y va a quedar cortada. De esta manera una vez que entra en esta media query ya despues se va adaptando sola gracias a que el ancho permanece dinamico de 100%. */
+    height: 500px;
+    width: 100%;
+}
+.menu { /* MARTIN: Con esto haces que el menu pase de horizontal a vertical, para que se vea completo y con la letra mas grande en las pantallas mas chicas. No es lo ideal que este asi vertical a secas, pero de momento sirve para entender el concepto. Lo ideal seria que pase a ser un menu hamburguesa o un menu desplegable con hover.
+    Un menu horizontal en una vista mobile no es adecuado porque las letras quedan de tamano muy chico y posiblemente obligue al usuario a usar el scroll horizontal.  */
+    flex-direction: column;
+}
+    #plantilla {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "foto1" 
+    "texto1"
+    "foto2"
+    "texto2"
+    "foto3"
+    "texto3"
+    "foto4"
+    "texto4"
+    "foto5"
+    "texto5"
+    "foto6"
+    "texto6"
+    "foto7"
+    "texto7"
+    "footer";
+    grid-template-rows: 1fr 1fr repeat(14, 2fr) 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+}
+.texto1 {
+    grid-area: texto1;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto2 {
+    grid-area: texto2;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto3 {
+    grid-area: texto3;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto4 {
+    grid-area: texto4;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto5 {
+    grid-area: texto5;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto6 {
+    grid-area: texto6;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto7 {
+    grid-area: texto7;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+}
+
+/* MARTIN: En esta media query se repite lo mismo que en la anterior porque tiene la misma funcionalidad, asi que tranquilamente podria quitarse esta media query (a menos de que desees darle mas personalizacion). */
+@media screen and (max-width:1024px) {
+    .grid__template {
+        display:grid;
+        grid-template-areas:
+        "header"
+        "productos"
+        "servicios"
+        "publicidad"
+        "footer";
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        height: 100vh;
+        margin: 0
+}
+.imagen-principal{
+    height: 500px;
+    width: 100%;
+}
+#plantilla {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "foto1" 
+    "texto1"
+    "foto2"
+    "texto2"
+    "foto3"
+    "texto3"
+    "foto4"
+    "texto4"
+    "foto5"
+    "texto5"
+    "foto6"
+    "texto6"
+    "foto7"
+    "texto7"
+    "footer";
+    grid-template-rows: 1fr 1fr repeat(14, 2fr) 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+}
+.texto1 {
+    grid-area: texto1;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto2 {
+    grid-area: texto2;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto3 {
+    grid-area: texto3;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto4 {
+    grid-area: texto4;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto5 {
+    grid-area: texto5;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto6 {
+    grid-area: texto6;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+.texto7 {
+    grid-area: texto7;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;
+}
+}
