@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(93, 68, 116);
+    background-color: rgb(191, 158, 222);
 }
 header{
     grid-area: header;
@@ -201,10 +201,10 @@ footer{
 }
 .texto1{
     grid-area: texto1;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -215,10 +215,10 @@ footer{
 }
 .texto2{
     grid-area: texto2;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -229,10 +229,10 @@ footer{
 }
 .texto3{
     grid-area: texto3;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -243,10 +243,10 @@ footer{
 }
 .texto4{
     grid-area: texto4;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -257,10 +257,10 @@ footer{
 }
 .texto5{
     grid-area: texto5;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -271,10 +271,10 @@ footer{
 }
 .texto6{
     grid-area: texto6;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -285,10 +285,10 @@ footer{
 }
 .texto7{
     grid-area: texto7;
-    height: 92%;
+    height: 100%;
     padding: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 35px;
+    margin-right: 20px;
     border: solid 5px rgb(168, 131, 182);
     background-color: blueviolet;
     text-align: center;
@@ -299,29 +299,27 @@ footer{
 }
 
 /* vista mobile */
-/* MARTIN: Fijate que pasando a max width el punto de corte es mas facil, porque en tu caso vos comenzaste la web diseñandola para desktop, y el min width se usa cuando se comienza mobile first (o sea diseñando primero para celular y luego para desktop). De esta manera tus media estan enfocados a la pantalla que se va achicando.*/
 @media screen and (max-width:768px) {
     .grid__template {
         display:grid;
-        grid-template-areas: /* MARTIN: En este caso te recomendaria que cuando se pase a mobile, mandes todo a una unica columna, ya que la foto, el video, y el texto de tu página se acomodarian mejor de esta manera, una caja debajo de la otra.  Entonces cuando la pantalla se comience a achicar, SERVICIOS y PUBLICIDAD (que antes estaban uno alado del otro) pasan a estar uno arriba del otro.*/
+        grid-template-areas: 
         "header"
         "productos"
         "servicios"
         "publicidad"
         "footer";
-        grid-template-rows: repeat(5, 1fr); /* MARTIN: Lo pase a fracciones para que sea mas facil de maniobrar, pero si queres podrias usar los pixeles aunque por ahi no es tan responsive llegado el caso.*/
-        grid-template-columns: 1fr; /* Ahora pasa a ser una sola columna que ocupa todo el ancho de la pantalla */
+        grid-template-rows: repeat(5, 1fr); 
+        grid-template-columns: 1fr; 
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         height: 100vh;
         margin: 0
 }
-.imagen-principal{ /* MARTIN: Hay que darle una altura minima a la foto cuando se va achicando la pantalla porque sino no se va a adaptar y va a quedar cortada. De esta manera una vez que entra en esta media query ya despues se va adaptando sola gracias a que el ancho permanece dinamico de 100%. */
+.imagen-principal{ 
     height: 500px;
     width: 100%;
 }
-.menu { /* MARTIN: Con esto haces que el menu pase de horizontal a vertical, para que se vea completo y con la letra mas grande en las pantallas mas chicas. No es lo ideal que este asi vertical a secas, pero de momento sirve para entender el concepto. Lo ideal seria que pase a ser un menu hamburguesa o un menu desplegable con hover.
-    Un menu horizontal en una vista mobile no es adecuado porque las letras quedan de tamano muy chico y posiblemente obligue al usuario a usar el scroll horizontal.  */
+.menu { 
     flex-direction: column;
 }
     #plantilla {
@@ -435,8 +433,7 @@ footer{
     color:aliceblue;
 }
 }
-
-/* MARTIN: En esta media query se repite lo mismo que en la anterior porque tiene la misma funcionalidad, asi que tranquilamente podria quitarse esta media query (a menos de que desees darle mas personalizacion). */
+/* vista desktop */
 @media screen and (max-width:1024px) {
     .grid__template {
         display:grid;
