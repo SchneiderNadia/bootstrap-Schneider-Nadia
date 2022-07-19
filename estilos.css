@@ -297,7 +297,21 @@ footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:aliceblue;
 }
-
+/* animacion */
+.anima-text {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 /* vista mobile */
 @media screen and (max-width:768px) {
     .grid__template {
