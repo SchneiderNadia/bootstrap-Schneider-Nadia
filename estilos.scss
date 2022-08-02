@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@import "estilos css-scss/footer.scss";
+@import "estilos css-scss/header.scss";
+@import "estilos css-scss/integrantes.scss";
+@import "estilos css-scss/menu.scss"; 
+
 $color-estandar: rgb(174, 93, 250);
 $texto-general: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
