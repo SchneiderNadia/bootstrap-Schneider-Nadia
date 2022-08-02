@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(191, 158, 221);
+}
+
+aside {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: publicidad;
+}
+
+.imagen-principal {
+  background-position: center;
+  background-size: cover;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://www.k-popmag.com/content/images/2021/07/14FF142F-39DD-41A0-8334-029A185DFFB3.jpeg");
+}
+
+.cuadro__violeta {
+  height: 95%;
+  border: solid 10px rgb(168, 131, 182);
+  background-color: blueviolet;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+}
+
+.grid__template {
+  display: grid;
+  grid-template-areas: "header header" "productos productos" "servicios publicidad" "footer footer";
+  grid-template-rows: 45px 750px 400px 45px;
+  grid-template-columns: 60% 40%;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  height: 100vh;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section#productos {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: productos;
+}
+
+section#servicios {
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-area: servicios;
+}
+
+/* animacion */
+.anima-text {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+/* vista mobile */
+@media screen and (max-width: 768px) {
+  .grid__template {
+    display: grid;
+    grid-template-areas: "header" "productos" "servicios" "publicidad" "footer";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  }
+  .imagen-principal {
+    height: 500px;
+    width: 100%;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  #plantilla {
+    display: grid;
+    grid-template-areas: "header" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3" "foto4" "texto4" "foto5" "texto5" "foto6" "texto6" "foto7" "texto7" "footer";
+    grid-template-rows: 1fr 1fr repeat(14, 2fr) 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  }
+  .texto1 {
+    grid-area: texto1;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto2 {
+    grid-area: texto2;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto3 {
+    grid-area: texto3;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto4 {
+    grid-area: texto4;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto5 {
+    grid-area: texto5;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto6 {
+    grid-area: texto6;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto7 {
+    grid-area: texto7;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+}
+/* vista desktop */
+@media screen and (max-width: 1024px) {
+  .grid__template {
+    display: grid;
+    grid-template-areas: "header" "productos" "servicios" "publicidad" "footer";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  }
+  .imagen-principal {
+    height: 500px;
+    width: 100%;
+  }
+  #plantilla {
+    display: grid;
+    grid-template-areas: "header" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3" "foto4" "texto4" "foto5" "texto5" "foto6" "texto6" "foto7" "texto7" "footer";
+    grid-template-rows: 1fr 1fr repeat(14, 2fr) 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    height: 100vh;
+    margin: 0;
+  }
+  .texto1 {
+    grid-area: texto1;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto2 {
+    grid-area: texto2;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto3 {
+    grid-area: texto3;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto4 {
+    grid-area: texto4;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto5 {
+    grid-area: texto5;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto6 {
+    grid-area: texto6;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+  .texto7 {
+    grid-area: texto7;
+    height: 92%;
+    width: 95%;
+    border: solid 5px rgb(168, 131, 182);
+    background-color: blueviolet;
+    display: flex;
+    text-align: start;
+    align-items: flex-start;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: aliceblue;
+  }
+}/*# sourceMappingURL=estilos.css.map */
