@@ -8,14 +8,15 @@
 @import "estilos css-scss/integrantes.scss";
 @import "estilos css-scss/menu.scss"; 
 
-$color-estandar: rgb(174, 93, 250);
+$color-menu: rgb(174, 93, 250);
+$color-estandar: rgb(191, 158, 221)
 $texto-general: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 body {
     display: flex;
     flex-wrap: wrap;
     font-family: $texto-general;
-    background-color:  rgb(191, 158, 221);
+    color: $color-estandar;
 }
 aside{
     display: flex;
