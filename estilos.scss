@@ -71,21 +71,6 @@ section#servicios{
     background-position: center;
     grid-area: servicios;
 }
-/* animacion */
-.anima-text {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-@keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
-}
 /* vista mobile */
 @media screen and (max-width:768px) {
     .grid__template {
